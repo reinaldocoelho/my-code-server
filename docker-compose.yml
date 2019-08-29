@@ -1,0 +1,11 @@
+version: "2"
+services:
+    encontactinternal:
+        image: "codercom/code-server:latest"
+        networks:
+            - backend
+        ports:
+            - "81:80"
+
+networks:
+    backend:
